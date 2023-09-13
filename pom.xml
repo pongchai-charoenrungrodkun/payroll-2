@@ -4,14 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.springframework.guides</groupId>
-		<artifactId>tut-rest</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-
-	<artifactId>payroll-2</artifactId>
-	<version>1.0.0</version>
+        <parent>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-parent</artifactId>
+                <version>2.7.15</version>
+                <relativePath/>
+        </parent>
+        <groupId>java</groupId>
+        <artifactId>payroll2</artifactId>
+        <version>1.0.0</version>
 
 	<dependencies>
 
