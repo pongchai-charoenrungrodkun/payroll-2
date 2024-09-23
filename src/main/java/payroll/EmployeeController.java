@@ -1,7 +1,5 @@
 package payroll;
 
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,7 +27,7 @@ class EmployeeController {
 
 		List<EntityModel<Employee>> employees = repository.findAll().stream()
 				//.filter(x -> name.equalsIgnoreCase(x.getFirstname()) || name.equalsIgnoreCase(x.getLastname()))
-				.map(employee -> EntityModel.of(employee))
+				.map(EntityModel::of)
 				.collect(Collectors.toList());
 
 		return CollectionModel.of(employees);
@@ -80,7 +78,7 @@ class EmployeeController {
 
 		List<EntityModel<Employee>> employees = repository.findAll().stream()
 				.filter(x -> name.equalsIgnoreCase(x.getFirstname()) || name.equalsIgnoreCase(x.getLastname()))
-				.map(employee -> EntityModel.of(employee))
+				.map(EntityModel::of)
 				.collect(Collectors.toList());
 
 		return CollectionModel.of(employees);
@@ -90,7 +88,7 @@ class EmployeeController {
 
 		List<EntityModel<Employee>> employees = repository.findAll().stream()
 				.filter(x -> name.equalsIgnoreCase(x.getFirstname()) || name.equalsIgnoreCase(x.getLastname()))
-				.map(employee -> EntityModel.of(employee))
+				.map(EntityModel::of)
 				.collect(Collectors.toList());
 
 		return CollectionModel.of(employees);

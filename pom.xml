@@ -11,7 +11,7 @@
                 <relativePath/>
         </parent>
         <groupId>java</groupId>
-        <artifactId>payroll2</artifactId>
+        <artifactId>payroll</artifactId>
         <version>1.0.0</version>
 
 	<dependencies>
